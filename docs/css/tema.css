@@ -1,0 +1,173 @@
+/****************************************************/
+/********************* LEIA-ME **********************/
+/****************************************************/
+/*
+ * Esse arquivo de CSS usa as regras de BEM.
+ * Para informações de como compreender e desenvolver 
+ * nesse modelo acesse: http://getbem.com/introduction/
+ * Regras de CSS desenvolvidas por Joseph Oliveira Correa.
+*/
+/****************************************************/
+/******************** INFORMAÇÕES *******************/
+/****************************************************/
+/*
+ * t - Refere-se a "Tema". Neste tipo de bloco estão 
+ * contidas todas as regras de css que não envolvem a 
+ * parte estrutural do site, mas sim sua estética.
+*/
+/****************************************************/
+/*********************** ROOT ***********************/
+/****************************************************/
+:root{
+    --c-azul-1: #013974;
+    --c-azul-2: #002a53;
+    --c-cinza-1: #cccccc;
+    --c-cinza-2: #2c2c2c;
+    --c-branco: #ffffff;
+    --c-preto: #000000;
+    --f-size-tiny: 12px;
+    --f-size-small: 14px;
+    --f-size-normal: 16px;
+    --f-size-big: 18px;
+    --f-size-huge: 25px;
+}
+
+/****************************************************/
+/********************** FONTES **********************/
+/****************************************************/
+
+@font-face {
+    font-family: 'RobotoRegular';
+    src: url('../fontes/Roboto-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/****************************************************/
+/*********************** TEMA ***********************/
+/****************************************************/
+.t-tema{
+    font-family: "RobotoRegular";
+    font-size: var(--f-size-normal);
+    line-height: 1.5;
+}
+
+/****************************************************/
+/******************** APLICACAO *********************/
+/****************************************************/
+.t-tema.c-app{
+    /* background-color: var(--c-cinza-1); */
+}
+
+/****************************************************/
+/******************** DOCUMENTO *********************/
+/****************************************************/
+.t-tema .c-doc{
+    background-color: var(--c-branco);
+}
+
+/****************************************************/
+/******************** DIVISORIA *********************/
+/****************************************************/
+
+.t-tema .c-hr{
+    border-color: var(--c-azul-1);
+}
+
+/****************************************************/
+/********************** TEXTO ***********************/
+/****************************************************/
+
+.t-tema .c-txt{
+    color: var(--c-cinza-2);
+    font-size: var(--f-size-small);
+}
+
+.t-tema .c-txt--tiny{
+    font-size: var(--f-size-tiny);
+}
+
+.t-tema .c-txt--big{
+    font-size: var(--f-size-big);
+}
+
+.t-tema .c-txt--azul{
+    color: var(--c-azul-2);
+}
+
+.t-tema .c-txt--branco{
+    color: var(--c-branco);
+}
+
+.t-tema .c-txt--tt{
+    font-size: var(--f-size-normal);
+    font-weight: bold;
+}
+
+.t-tema .c-txt--tt-alt{
+    font-size: var(--f-size-huge);
+}
+
+.t-tema .c-txt--tt.c-txt--branco{
+    background-color: var(--c-azul-2);
+}
+
+.t-tema .c-txt--tt-alt.c-txt--branco{
+    background-color: var(--c-azul-1);
+}
+
+/****************************************************/
+/******************** CONTEUDO **********************/
+/****************************************************/
+
+.t-tema .c-ct--azul{
+    background-color: var(--c-azul-1);
+}
+
+/****************************************************/
+/********************** BARRA ***********************/
+/****************************************************/
+
+.c-bar{
+    background-color: var(--c-azul-2);
+}
+
+.c-bar-10{
+    background: linear-gradient(to right, var(--c-branco) 0%,var(--c-branco) 10%,var(--c-azul-2) 10%,var(--c-azul-2) 100%);
+}
+
+.c-bar-20{
+    background: linear-gradient(to right, var(--c-branco) 0%,var(--c-branco) 20%,var(--c-azul-2) 20%,var(--c-azul-2) 100%);
+}
+
+.c-bar-30{
+    background: linear-gradient(to right, var(--c-branco) 0%,var(--c-branco) 30%,var(--c-azul-2) 30%,var(--c-azul-2) 100%);
+}
+
+.c-bar-40{
+    background: linear-gradient(to right, var(--c-branco) 0%,var(--c-branco) 40%,var(--c-azul-2) 40%,var(--c-azul-2) 100%);
+}
+
+.c-bar-50{
+    background: linear-gradient(to right, var(--c-branco) 0%,var(--c-branco) 50%,var(--c-azul-2) 50%,var(--c-azul-2) 100%);
+}
+
+.c-bar-60{
+    background: linear-gradient(to right, var(--c-branco) 0%,var(--c-branco) 60%,var(--c-azul-2) 60%,var(--c-azul-2) 100%);
+}
+
+.c-bar-70{
+    background: linear-gradient(to right, var(--c-branco) 0%,var(--c-branco) 70%,var(--c-azul-2) 70%,var(--c-azul-2) 100%);
+}
+
+.c-bar-80{
+    background: linear-gradient(to right, var(--c-branco) 0%,var(--c-branco) 80%,var(--c-azul-2) 80%,var(--c-azul-2) 100%);
+}
+
+.c-bar-90{
+    background: linear-gradient(to right, var(--c-branco) 0%,var(--c-branco) 90%,var(--c-azul-2) 90%,var(--c-azul-2) 100%);
+}
+
+.c-bar-100{
+    background: linear-gradient(to right, var(--c-branco) 0%,var(--c-branco) 1000%,var(--c-azul-2) 100%,var(--c-azul-2) 100%);
+}
